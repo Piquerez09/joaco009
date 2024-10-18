@@ -3,202 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JocaLux - Artigos de Luxo</title>
+    <title>Papai Cris - Cristiano Ronaldo</title>
     <style>
         body {
-            font-family: 'Georgia', serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #2E7D32; /* Verde */
-            color: #fff;
+            background-color: #ffcc00; /* Amarelo chamativo */
+            color: #333;
         }
         header {
-            background-color: #4CAF50; /* Verde */
+            background-color: #f44336; /* Vermelho */
             text-align: center;
             padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
         header h1 {
             margin: 0;
-            display: inline-block;
             font-size: 3em;
-            font-weight: bold;
-            color: #FFD700; /* Dourado */
-        }
-        header p {
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
-        .contact {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        .contact a {
-            color: #FFD700; /* Dourado */
-            text-decoration: none;
+            color: #fff;
         }
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
             padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
         }
-        .product {
+        .news {
             background-color: #fff;
-            border: 2px solid #FFD700; /* Dourado */
             border-radius: 10px;
-            padding: 20px;
-            margin: 10px 0;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            color: #333;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .product:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        .news h2 {
+            font-size: 1.5em;
+            color: #f44336; /* Vermelho */
         }
-        footer {
-            background-color: #4CAF50; /* Verde */
-            color: white;
+        .news a {
+            text-decoration: none;
+            color: #0073e6; /* Azul */
+            font-weight: bold;
+        }
+        .footer {
             text-align: center;
             padding: 15px 0;
-            font-weight: bold;
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
+            background-color: #f44336; /* Vermelho */
+            color: #fff;
+            position: relative;
+            bottom: 0;
             width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding-top: 60px;
-        }
-        .modal-content {
-            background-color: #fff;
-            margin: 10% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>JocaLux</h1>
-        <p>Artigos de Luxo Exclusivos</p>
-        <p class="contact">
-            <a href="https://wa.me/5541992600607">Telefone: (41) 99260-0607</a>
-        </p>
+        <h1>Papai Cris</h1>
+        <p>Tudo sobre Cristiano Ronaldo</p>
     </header>
 
-    <div class="product" onclick="showProduct('Relógio de Luxo', 299, 'https://www.dryzun.com.br/m126720vtnr-0001/p')">
-        <h3>Relógio de Luxo</h3>
-        <p>Um relógio elegante feito com materiais de alta qualidade.</p>
-        <p><strong>A partir de: €299</strong></p>
-    </div>
-    
+    <div class="container">
+        <h2>Últimas Notícias</h2>
 
-        <div class="product" onclick="showProduct('Bolsa de Designer', 499, 'https://example.com/bolsa.jpg')">
-            <h3>Bolsa de Designer</h3>
-            <p>Bolsa exclusiva de couro, perfeita para qualquer ocasião.</p>
-            <p><strong>A partir de: €499</strong></p>
+        <div class="news">
+            <h2><a href="https://www.espn.com.br/futebol/artigo/_/id/123456/cristiano-ronaldo-pode-voltar-a-europa" target="_blank">Cristiano Ronaldo pode voltar à Europa</a></h2>
+            <p>Rumores sobre uma possível transferência de Cristiano Ronaldo para um clube europeu estão em alta.</p>
         </div>
 
-        <div class="product" onclick="showProduct('Joia Personalizada', 799, 'https://example.com/joia.jpg')">
-            <h3>Joia Personalizada</h3>
-            <p>Joia única, feita sob medida para você.</p>
-            <p><strong>A partir de: €799</strong></p>
+        <div class="news">
+            <h2><a href="https://www.uol.com.br/esporte/noticias/2024/10/16/ronaldo-destaca-segunda-marca-pessoal.htm" target="_blank">Ronaldo destaca marca pessoal em nova conquista</a></h2>
+            <p>O craque português continua quebrando recordes e conquistando títulos.</p>
         </div>
 
-        <div class="product" onclick="showProduct('Sapatos de Designer', 399, 'https://example.com/sapatos.jpg')">
-            <h3>Sapatos de Designer</h3>
-            <p>Estilo e conforto em cada passo.</p>
-            <p><strong>A partir de: €399</strong></p>
-        </div>
-
-        <div class="product" onclick="showProduct('Cinto de Couro', 199, 'https://example.com/cinto.jpg')">
-            <h3>Cinto de Couro</h3>
-            <p>Cinto de couro premium, ideal para qualquer ocasião.</p>
-            <p><strong>A partir de: €199</strong></p>
-        </div>
-
-        <div class="product" onclick="showProduct('Perfume Exclusivo', 149, 'https://example.com/perfume.jpg')">
-            <h3>Perfume Exclusivo</h3>
-            <p>Uma fragrância única que deixa uma marca inesquecível.</p>
-            <p><strong>A partir de: €149</strong></p>
-        </div>
-
-        <div class="product" onclick="showProduct('Óculos de Sol', 249, 'https://example.com/oculos.jpg')">
-            <h3>Óculos de Sol</h3>
-            <p>Estilo e proteção em um só produto.</p>
-            <p><strong>A partir de: €249</strong></p>
-        </div>
-
-        <div class="product" onclick="showProduct('Bracelete de Ouro', 599, 'https://example.com/bracelete.jpg')">
-            <h3>Bracelete de Ouro</h3>
-            <p>Um toque de elegância para qualquer look.</p>
-            <p><strong>A partir de: €599</strong></p>
+        <div class="news">
+            <h2><a href="https://www.ojogo.pt/internacional/ronaldo-em-mais-uma-partida-inesquecivel-1234567.html" target="_blank">Mais uma partida inesquecível de Ronaldo</a></h2>
+            <p>Cristiano Ronaldo brilha em mais um jogo, deixando sua marca no campeonato.</p>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 JocaLux. Todos os direitos reservados.</p>
+    <footer class="footer">
+        <p>&copy; 2024 Papai Cris. Todos os direitos reservados.</p>
     </footer>
-
-    <div id="productModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="modalTitle"></h2>
-            <img id="modalImage" src="" alt="">
-            <p id="modalPrice"></p>
-        </div>
-    </div>
-
-    <script>
-        function showProduct(name, price, image) {
-            document.getElementById('modalTitle').innerText = name;
-            document.getElementById('modalPrice').innerText = `Preço: €${price}`;
-            document.getElementById('modalImage').src = image;
-            document.getElementById('productModal').style.display = 'block';
-        }
-
-        function closeModal() {
-            document.getElementById('productModal').style.display = 'none';
-        }
-
-        window.onclick = function(event) {
-            if (event.target == document.getElementById('productModal')) {
-                closeModal();
-            }
-        }
-    </script>
 </body>
 </html>
