@@ -9,21 +9,19 @@
             font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #f8f8f8, #e0e0e0);
-            color: #333;
+            background-color: #2E7D32; /* Verde */
+            color: #fff;
         }
         header {
             background-color: #4CAF50; /* Verde */
-            color: white;
             text-align: center;
             padding: 20px 0;
-            position: relative;
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
         header h1 {
             margin: 0;
             display: inline-block;
-            font-size: 2.5em;
+            font-size: 3em;
             font-weight: bold;
         }
         .crown {
@@ -43,7 +41,7 @@
             gap: 20px;
         }
         .product {
-            background-color: white;
+            background-color: #fff;
             border: 2px solid #FFD700; /* Dourado */
             border-radius: 10px;
             padding: 20px;
@@ -51,6 +49,7 @@
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            color: #333;
         }
         .product:hover {
             transform: translateY(-5px);
@@ -61,9 +60,6 @@
             color: white;
             text-align: center;
             padding: 15px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
             font-weight: bold;
         }
         .modal {
@@ -129,6 +125,31 @@
         <div class="product" onclick="showProduct('Joia Personalizada', 799, 'https://example.com/joia.jpg')">
             <h3>Joia Personalizada</h3>
             <p>Joia única, feita sob medida para você.</p>
+        </div>
+
+        <div class="product" onclick="showProduct('Sapatos de Designer', 399, 'https://example.com/sapatos.jpg')">
+            <h3>Sapatos de Designer</h3>
+            <p>Estilo e conforto em cada passo.</p>
+        </div>
+
+        <div class="product" onclick="showProduct('Cinto de Couro', 199, 'https://example.com/cinto.jpg')">
+            <h3>Cinto de Couro</h3>
+            <p>Cinto de couro premium, ideal para qualquer ocasião.</p>
+        </div>
+
+        <div class="product" onclick="showProduct('Perfume Exclusivo', 149, 'https://example.com/perfume.jpg')">
+            <h3>Perfume Exclusivo</h3>
+            <p>Uma fragrância única que deixa uma marca inesquecível.</p>
+        </div>
+
+        <div class="product" onclick="showProduct('Óculos de Sol', 249, 'https://example.com/oculos.jpg')">
+            <h3>Óculos de Sol</h3>
+            <p>Estilo e proteção em um só produto.</p>
+        </div>
+
+        <div class="product" onclick="showProduct('Bracelete de Ouro', 599, 'https://example.com/bracelete.jpg')">
+            <h3>Bracelete de Ouro</h3>
+            <p>Um toque de elegância para qualquer look.</p>
         </div>
     </div>
 
