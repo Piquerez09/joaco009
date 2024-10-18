@@ -17,9 +17,18 @@
             color: white;
             text-align: center;
             padding: 20px 0;
+            position: relative;
         }
-        h1 {
+        header h1 {
             margin: 0;
+            display: inline;
+        }
+        .crown {
+            width: 50px;
+            height: auto;
+            position: absolute;
+            left: 20px;
+            top: 20px;
         }
         .container {
             width: 80%;
@@ -33,7 +42,11 @@
             border-radius: 8px;
             padding: 15px;
             margin: 10px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.02);
         }
         footer {
             background-color: #4CAF50; /* Verde */
@@ -48,6 +61,7 @@
 </head>
 <body>
     <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Crown.svg/1024px-Crown.svg.png" alt="Coroa" class="crown">
         <h1>JocaLux</h1>
         <p>Artigos de Luxo Exclusivos</p>
     </header>
@@ -55,17 +69,17 @@
     <div class="container">
         <h2>Nossos Produtos</h2>
 
-        <div class="product">
+        <div class="product" onclick="showProduct('Relógio de Luxo', 299)">
             <h3>Relógio de Luxo</h3>
             <p>Um relógio elegante feito com materiais de alta qualidade.</p>
         </div>
 
-        <div class="product">
+        <div class="product" onclick="showProduct('Bolsa de Designer', 499)">
             <h3>Bolsa de Designer</h3>
             <p>Bolsa exclusiva de couro, perfeita para qualquer ocasião.</p>
         </div>
 
-        <div class="product">
+        <div class="product" onclick="showProduct('Joia Personalizada', 799)">
             <h3>Joia Personalizada</h3>
             <p>Joia única, feita sob medida para você.</p>
         </div>
@@ -74,5 +88,11 @@
     <footer>
         <p>&copy; 2024 JocaLux. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        function showProduct(name, price) {
+            alert(`Produto: ${name}\nPreço: $${price}`);
+        }
+    </script>
 </body>
 </html>
